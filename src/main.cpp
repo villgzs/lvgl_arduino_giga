@@ -5,10 +5,14 @@
 #include "Arduino_H7_Video.h"
 #include "Arduino_GigaDisplayTouch.h"
 #include "lvgl.h"
+// For find the appropriate lv_conf.h - in PlatformIO environment - , please click on the `lv_conf.h` file in the next line, 
+// than press F12. New window will open.
+// Next click on `lv_conf_9.h` in the new window. That is the lv_conf.h file which is used in this project. 
+// You can modify that file to enable the demo you want to run.
+// !ATTENTION! - `lv_conf_9.h` is usually located in the `~/.platformio/packages/framework-arduino-mbed/libraries/Arduino_H7_Video/src/` folder. 
+// !ATTENTION! - Editing that file May impact other projects!
 #include "lv_conf.h"
 #include "demos/lv_demos.h"
-
-
 
 Arduino_H7_Video          Display(800, 480, GigaDisplayShield);
 Arduino_GigaDisplayTouch  TouchDetector;
